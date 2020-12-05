@@ -1,6 +1,5 @@
 module Day2
 	class << self
-
 		def get_data
       policies = []
 			File.readlines('input.txt').map do |str|
