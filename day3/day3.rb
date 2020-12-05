@@ -1,10 +1,10 @@
 module Day3
-	class << self
-		def get_data
+  class << self
+    def get_data
       map_rows = []
-			File.readlines('input.txt').map do |row|
+      File.readlines('input.txt').map do |row|
         map_rows << row.chomp
-			end
+      end
       map_rows
     end
 
