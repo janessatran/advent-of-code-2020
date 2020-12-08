@@ -25,9 +25,9 @@ module Day7
     def get_possible_container_purses(purse)
       graph, weights = self.get_data
       reverse_graph = graph.reverse
-      bfs = reverse_graph.bfs_iterator
-      bfs.start_vertex = purse
-      bfs.count - 1
+      search = reverse_graph.dfs_iterator
+      search.start_vertex = purse
+      search.count - 1
     end
 
     def part_one
